@@ -9,14 +9,9 @@ Repository: `bboinnovate20/uk-goods-trade` (public).
 
 No build step, package installation or external fonts are required. `.nojekyll` keeps this a plain static site.
 
-## Add the Power BI report
+## Power BI file
 
-1. In Power BI Service, obtain the report's **Publish to web (public)** URL. This makes the report and underlying model data public; only use a model suitable for public sharing.
-2. Set `powerBiPublicUrl` in `assets/config.js` to the `https://app.powerbi.com/view?r=...` URL. Do not paste iframe HTML or a private workspace link.
-3. Replace the pending report link in `README.md` with the same public URL.
-4. Commit and push the changes. GitHub Pages will redeploy.
-
-Until a public URL is configured, the website shows a static snapshot generated from the validated CSV, and clearly labels the interactive report as pending. The static preview is not a Power BI screenshot.
+`UK Trade Performance.pbix` is in the repository. GitHub Pages cannot open a `.pbix` file, and this project does not have a public Power BI link. The page therefore shows the report's August 2026 cards, contribution charts, trend, and detail table from the validated data. Open the `.pbix` in Power BI Desktop for the original report.
 
 ## Updating the data
 
@@ -24,4 +19,4 @@ This is an August 2026 snapshot. Updating CSVs alone will not update the page's 
 
 ## Included files
 
-The notebook is a source-only copy: saved execution outputs and session metadata were removed for a clean public version. The original notebook remains in the local project. The saved Power BI binary is not included; the intended viewing route is the public report embed.
+The notebook is a source-only copy: saved execution outputs and session metadata were removed for a clean public version. The original notebook remains in the local project. `UK Trade Performance.pbix` is included for Power BI Desktop. The GitHub Page shows that report's figures directly.

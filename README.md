@@ -6,16 +6,15 @@ A data analysis portfolio project using **Python, Google Colab, DAX and Power BI
 
 **Headline finding:** The UK goods deficit narrowed by **£178 million in August 2026**. Improvement in non-EU trade, mainly from lower imports, outweighed deterioration in EU trade. Overall exports still fell compared with July.
 
-## View the dashboard
+## View the report
 
-**Portfolio website:** [Explore the UK goods trade portfolio](https://bboinnovate20.github.io/uk-goods-trade/).
+![UK Trade Performance Power BI report for August 2026](tool.png)
 
-**Interactive Power BI report:** Public link to be added after publication. The website currently includes a static snapshot calculated from the validated data.
+**GitHub Page:** [UK Trade Performance](https://bboinnovate20.github.io/uk-goods-trade/). The page shows the report content only: the August 2026 cards, the EU and non-EU contribution charts, the export and import trend, and the detail table.
 
-<!-- Replace the sentence above with: [View the interactive Power BI report](YOUR_PUBLIC_POWER_BI_URL) -->
-<!-- After saving a final screenshot as images/dashboard.png, add: ![UK goods trade dashboard](images/dashboard.png) -->
+**Power BI file:** [UK Trade Performance.pbix](UK%20Trade%20Performance.pbix). Open this file in Power BI Desktop. A `.pbix` file cannot run inside a browser, so the page uses the same validated figures as the report instead of a Power BI web link.
 
-The report is a fixed **August 2026 snapshot**, not a live connection to ONS. Its main page presents six KPI cards, monthly export and import trends, regional balance contributions, and export/import contributions by region.
+The report is a fixed **August 2026 snapshot**, not a live connection to ONS.
 
 ## Research question
 
@@ -139,6 +138,7 @@ The relative links below assume this README and the accompanying files are uploa
 | [Worldwide Power BI data](powerbi/Worldwide.csv) | Worldwide monthly data in report-ready units |
 | [Regional Power BI data](powerbi/Regions.csv) | EU and Non-EU monthly data in report-ready units |
 | [DAX measures](powerbi/Measures.dax) | Reporting-month KPIs, dynamic titles and formatting guidance |
+| [Power BI report](UK%20Trade%20Performance.pbix) | UK Trade Performance report. Open it in Power BI Desktop. |
 
 ## Reproducing the analysis
 
@@ -162,6 +162,6 @@ The notebook may contain session-specific file paths. A fresh ONS download is no
 
 Research-question development · data cleaning and reshaping · time-series analysis · data-quality validation · KPI design · DAX measures · Power BI visualisation · business interpretation · documentation
 
-## Website deployment
+## GitHub Page
 
-This repository includes a responsive static website, with no build step or paid hosting required. See [deployment instructions](DEPLOYMENT.md). The Power BI embed is enabled only when a public report URL is configured.
+`index.html` is the GitHub Page. It shows the August 2026 report figures and the detail table, with no site navigation. Publishing steps are in [DEPLOYMENT.md](DEPLOYMENT.md).
