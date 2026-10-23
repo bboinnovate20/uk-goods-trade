@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 310" role="img" aria-labelledby="title desc">
+<title id="title">UK goods exports and imports, September 2023 to August 2026</title>
+<desc id="desc">Monthly values in billions of pounds. Imports exceed exports throughout all 36 months. August exports are 34.352 and imports 54.191.</desc>
+<rect width="1060" height="310" fill="#fff"/>
+<g font-family="Arial,sans-serif" font-size="13" fill="#5b667a">
+<path d="M66 252H1020" stroke="#e7ebf1"/><text x="51" y="256" text-anchor="end">25</text>
+<path d="M66 222H1020" stroke="#e7ebf1"/><text x="51" y="226" text-anchor="end">30</text>
+<path d="M66 192H1020" stroke="#e7ebf1"/><text x="51" y="196" text-anchor="end">35</text>
+<path d="M66 162H1020" stroke="#e7ebf1"/><text x="51" y="166" text-anchor="end">40</text>
+<path d="M66 132H1020" stroke="#e7ebf1"/><text x="51" y="136" text-anchor="end">45</text>
+<path d="M66 102H1020" stroke="#e7ebf1"/><text x="51" y="106" text-anchor="end">50</text>
+<path d="M66 72H1020" stroke="#e7ebf1"/><text x="51" y="76" text-anchor="end">55</text>
+<path d="M66 42H1020" stroke="#e7ebf1"/><text x="51" y="46" text-anchor="end">60</text>
+<text x="66.0" y="282" text-anchor="middle">Sep 2023</text>
+<text x="338.57142857142856" y="282" text-anchor="middle">Jul 2024</text>
+<text x="665.6571428571428" y="282" text-anchor="middle">Jul 2025</text>
+<text x="1020.0" y="282" text-anchor="middle">Aug 2026</text>
+<text x="18" y="20">£bn</text></g>
+<polyline points="66.00,119.69 93.26,95.68 120.51,106.39 147.77,117.07 175.03,116.35 202.29,122.96 229.54,122.77 256.80,98.32 284.06,116.06 311.31,92.42 338.57,106.81 365.83,104.69 393.09,121.70 420.34,104.98 447.60,101.56 474.86,114.01 502.11,112.59 529.37,95.10 556.63,97.13 583.89,104.07 611.14,100.28 638.40,109.33 665.66,94.34 692.91,96.59 720.17,100.27 747.43,106.06 774.69,103.42 801.94,101.50 829.20,100.56 856.46,88.70 883.71,82.57 910.97,77.69 938.23,75.22 965.49,77.90 992.74,69.30 1020.00,76.85" fill="none" stroke="#087f8c" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1020.0" cy="76.85399999999998" r="4" fill="#087f8c"/>
+<polyline points="66.00,209.41 93.26,205.80 120.51,206.76 147.77,207.62 175.03,207.03 202.29,213.60 229.54,210.69 256.80,204.27 284.06,211.89 311.31,188.99 338.57,212.70 365.83,192.61 393.09,208.10 420.34,210.43 447.60,213.46 474.86,213.44 502.11,201.88 529.37,197.29 556.63,191.16 583.89,214.06 611.14,210.50 638.40,218.46 665.66,205.36 692.91,210.08 720.17,216.49 747.43,212.75 774.69,206.92 801.94,214.35 829.20,205.94 856.46,210.24 883.71,204.65 910.97,188.96 938.23,181.49 965.49,193.09 992.74,189.40 1020.00,195.89" fill="none" stroke="#7045c6" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1020.0" cy="195.88800000000003" r="4" fill="#7045c6"/>
+</svg>
