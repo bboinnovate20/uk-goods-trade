@@ -1,0 +1,11 @@
+check,issue_count
+Duplicate month/market keys,0
+Absent calendar months in source window,0
+Missing numeric cells in prepared table,0
+Unrecognised nonblank numeric values,0
+Missing source release dates,0
+Unavailable balance comparisons,0
+Nonzero balance residuals,0
+Unavailable regional comparisons,0
+Nonzero regional residuals,0
+Mismatched August bulletin controls,0

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="UK goods trade analysis: monthly trends, EU and non-EU contributions, and the evidence behind the August 2026 trade balance.">
+  <title>UK Goods Trade | Data Analysis Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/config.js" defer></script>
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav wrap">
+  <a class="brand" href="#">BB<span>O</span> <span class="brand-sub">/ DATA PORTFOLIO</span></a>
+  <nav aria-label="Main navigation"><a href="#snapshot">Dashboard</a><a href="#findings">Findings</a><a href="#method">Method</a><a href="https://github.com/bboinnovate20/uk-goods-trade">GitHub ↗</a></nav>
+</header>
+<main id="main">
+  <section class="hero wrap">
+    <div class="eyebrow"><span class="dot"></span> BUSINESS ANALYTICS · ONS OPEN DATA</div>
+    <h1>UK goods trade.<br><span>The story behind the balance.</span></h1>
+    <p class="lede">A £178 million narrowing of the deficit. Two regions moving in opposite directions. Explore the trade movements behind August 2026.</p>
+    <div class="actions"><a class="button primary" href="#snapshot">Explore the analysis ↓</a><a class="button" href="https://github.com/bboinnovate20/uk-goods-trade">View project on GitHub ↗</a></div>
+    <div class="meta"><span>September 2023–August 2026</span><span>Python · Power BI · DAX</span><span>Release: 15 October 2026</span></div>
+  </section>
+  <section class="question wrap" aria-labelledby="question-title"><div class="eyebrow">THE RESEARCH QUESTION</div><h2 id="question-title">How is UK goods trade changing, and how do EU and non-EU markets contribute?</h2><p>Designed to give UK business leaders national trade context for further investigation into export markets and sourcing.</p></section>
+  <section id="snapshot" class="wrap section">
+    <div class="section-head"><div><div class="eyebrow">01 / THE LATEST POSITION</div><h2>August 2026 at a glance</h2></div><span class="badge">Fixed release snapshot</span></div>
+    <div class="kpis">
+      <article class="kpi"><h3>Goods exports</h3><p class="number">£34.352<span>bn</span></p><p class="change">−3.05% <span>vs July 2026</span></p></article>
+      <article class="kpi"><h3>Goods imports</h3><p class="number">£54.191<span>bn</span></p><p class="change">−2.27% <span>vs July 2026</span></p></article>
+      <article class="kpi"><h3>Trade balance</h3><p class="number">−£19.839<span>bn</span></p><p class="change positive">+£0.178bn <span>vs July 2026</span></p></article>
+    </div>
+    <article class="panel trend"><div class="panel-head"><div><h3>Imports exceeded exports throughout the period</h3><p>Monthly goods trade · £bn · seasonally adjusted</p></div><div class="legend"><span><i class="export"></i>Exports</span><span><i class="import"></i>Imports</span></div></div><img src="assets/trade-trend.svg" alt="Monthly UK goods exports and imports from September 2023 to August 2026. Imports exceed exports throughout the 36-month window." width="1060" height="310"><p class="caption">Preview generated from the validated dataset. Download the <a href="powerbi/Worldwide.csv">monthly values</a> to inspect each observation.</p></article>
+    <section id="powerbi-section" class="panel embed-panel" aria-labelledby="powerbi-title"><div class="panel-head"><div><h3 id="powerbi-title">Power BI report</h3><p id="embed-status">The interactive report will appear here when its public link is available.</p></div><a id="powerbi-link" class="button" hidden target="_blank" rel="noopener noreferrer">Open full report ↗</a></div><div id="powerbi-frame"></div></section>
+  </section>
+  <section id="findings" class="wrap section">
+    <div class="section-head"><div><div class="eyebrow">02 / EXPLAINING THE CHANGE</div><h2>One small improvement. Opposing regional movements.</h2></div></div>
+    <div class="two-col"><article class="panel"><span class="region">EU</span><p class="regional-number">−£1.705bn</p><h3>The EU deficit widened</h3><p>Exports fell by £1.246bn and imports rose by £0.459bn. Both movements worsened the trade balance.</p></article><article class="panel"><span class="region">NON-EU</span><p class="regional-number teal">+£1.883bn</p><h3>The non-EU deficit narrowed</h3><p>A £1.718bn fall in imports accounted for most of the improvement, alongside a £0.165bn increase in exports.</p></article></div>
+    <div class="equation"><span>−£1.705bn <small>EU contribution</small></span><b>+</b><span>£1.883bn <small>Non-EU contribution</small></span><b>=</b><span class="teal">+£0.178bn <small>Worldwide balance change</small></span></div>
+    <div class="insight"><div class="eyebrow">WHAT THIS MEANS</div><p>The deficit narrowed mainly because imports fell—not because overall exports grew. This is an arithmetic explanation of the balance, not evidence of the economic causes behind the movements.</p></div>
+    <details class="panel"><summary>Explore the contribution calculations</summary><div class="table-scroll"><table><caption>August 2026 compared with July 2026, £bn</caption><thead><tr><th scope="col">Region</th><th scope="col">Export contribution</th><th scope="col">Import contribution</th><th scope="col">Balance change</th></tr></thead><tbody><tr><th scope="row">EU</th><td>−1.246</td><td>−0.459</td><td>−1.705</td></tr><tr><th scope="row">Non-EU</th><td>+0.165</td><td>+1.718</td><td>+1.883</td></tr><tr><th scope="row">Worldwide reconciliation</th><td>−1.081</td><td>+1.259</td><td>+0.178</td></tr></tbody></table></div><p class="caption">Balance = exports − imports. Import contribution = previous imports − current imports. Worldwide is the reconciliation total, not an additional region to sum.</p></details>
+    <article class="context"><h3>A better month is not yet a sustained improvement</h3><p>The UK recorded a goods deficit in all 36 months shown. Supporting notebook analysis also finds a £59.055bn deficit in June–August 2026, £2.451bn wider than in March–May. A single month should be interpreted alongside longer periods.</p></article>
+  </section>
+  <section id="method" class="wrap section">
+    <div class="section-head"><div><div class="eyebrow">03 / FROM SOURCE TO FINDINGS</div><h2>Transparent methods. Traceable results.</h2></div></div>
+    <div class="steps"><article><span>01</span><h3>Prepare</h3><p>Select nine ONS series, extract monthly records, parse dates and numbers, and reshape to one row per month and market.</p></article><article><span>02</span><h3>Validate</h3><p>Check calendar coverage and duplicates. Reconcile exports minus imports and EU plus Non-EU. Preserve missing data.</p></article><article><span>03</span><h3>Analyse</h3><p>Calculate monthly and annual changes, regional shares and contributions. Use a 12-month baseline for annual comparisons.</p></article><article><span>04</span><h3>Communicate</h3><p>Build reporting-month DAX measures and Power BI visuals. Explain the results alongside their business relevance and limits.</p></article></div>
+    <div class="downloads"><a href="uk_trade_colab_starter.ipynb" download>Analysis notebook ↓</a><a href="uk_trade_kpis_and_data_dictionary.md">Data dictionary ↗</a><a href="powerbi/Worldwide.csv" download>Worldwide CSV ↓</a><a href="powerbi/Regions.csv" download>Regional CSV ↓</a><a href="https://github.com/bboinnovate20/uk-goods-trade#preparation-and-validation">Validation evidence ↗</a></div>
+    <details class="panel limitations"><summary>Scope, limitations and source</summary><ul><li>Goods excluding precious metals, including non-monetary gold; balance-of-payments basis.</li><li>Seasonally adjusted current prices: changes reflect both price and quantity effects.</li><li>National patterns do not establish the exposure or performance of a specific company.</li><li>These figures can be revised. This portfolio uses the 15 October 2026 release and is not automatically refreshed.</li><li>Investigate commodity and country detail, and company-level data, before recommending commercial action.</li></ul><p>Source: <a href="https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/august2026">ONS UK trade, August 2026</a> and the <a href="https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/datasets/tradeingoodsmretsallbopeu2013timeseriesspreadsheet">MRET time-series dataset</a>. Analysis and visualisation are an independent portfolio project.</p></details>
+  </section>
+</main>
+<footer class="wrap"><span>UK Goods Trade · Analysis portfolio</span><a href="https://github.com/bboinnovate20">bboinnovate20 ↗</a><a href="#">Back to top ↑</a></footer>
+</body>
+</html>

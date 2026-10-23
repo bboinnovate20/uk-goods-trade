@@ -1,0 +1,9 @@
+check,issue_count
+Mismatch against independent calendar lookup,0
+Regional share sums different from 100%,0
+Unexpected Total regional shares,0
+Missing growth or balance-change KPIs in display window,0
+Infinite KPI values,0
+Missing/zero comparator boundary failures,0
+Duplicate dashboard month/market keys,0
+Unexpected dashboard row count,0
