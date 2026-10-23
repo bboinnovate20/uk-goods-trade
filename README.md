@@ -8,7 +8,7 @@ A data analysis portfolio project using **Python, Google Colab, DAX and Power BI
 
 ## View the dashboard
 
-**Portfolio website:** [Open the project page](index.html). Once GitHub Pages is enabled, use the deployed website URL.
+**Portfolio website:** [Explore the UK goods trade portfolio](https://bboinnovate20.github.io/uk-goods-trade/).
 
 **Interactive Power BI report:** Public link to be added after publication. The website currently includes a static snapshot calculated from the validated data.
 
@@ -138,6 +138,7 @@ The relative links below assume this README and the accompanying files are uploa
 | [Analysis checks](uk_trade_analysis_checks.csv) | Contribution reconciliation results |
 | [Worldwide Power BI data](powerbi/Worldwide.csv) | Worldwide monthly data in report-ready units |
 | [Regional Power BI data](powerbi/Regions.csv) | EU and Non-EU monthly data in report-ready units |
+| [DAX measures](powerbi/Measures.dax) | Reporting-month KPIs, dynamic titles and formatting guidance |
 
 ## Reproducing the analysis
 
