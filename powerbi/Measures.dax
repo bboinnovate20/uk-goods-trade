@@ -1,0 +1,75 @@
+// Create each measure separately in the Worldwide table.
+// These match the reporting-month measures used in the dashboard walkthrough.
+// MAX(period) respects current filters; the latest date in this snapshot is August 2026.
+
+Monthly Exports =
+VAR ReportingMonth = MAX('Worldwide'[period])
+RETURN
+    CALCULATE(SUM('Worldwide'[exports_gbp_bn]), 'Worldwide'[period] = ReportingMonth)
+
+Monthly Imports =
+VAR ReportingMonth = MAX('Worldwide'[period])
+RETURN
+    CALCULATE(SUM('Worldwide'[imports_gbp_bn]), 'Worldwide'[period] = ReportingMonth)
+
+Monthly Trade Balance =
+VAR ReportingMonth = MAX('Worldwide'[period])
+RETURN
+    CALCULATE(SUM('Worldwide'[balance_gbp_bn]), 'Worldwide'[period] = ReportingMonth)
+
+Exports Monthly Change =
+VAR ReportingMonth = MAX('Worldwide'[period])
+RETURN
+    CALCULATE(MAX('Worldwide'[exports_mom_rate]), 'Worldwide'[period] = ReportingMonth)
+
+Imports Monthly Change =
+VAR ReportingMonth = MAX('Worldwide'[period])
+RETURN
+    CALCULATE(MAX('Worldwide'[imports_mom_rate]), 'Worldwide'[period] = ReportingMonth)
+
+Balance Monthly Change =
+VAR ReportingMonth = MAX('Worldwide'[period])
+RETURN
+    CALCULATE(MAX('Worldwide'[balance_mom_change_gbp_bn]), 'Worldwide'[period] = ReportingMonth)
+
+// Formats:
+// Exports/imports growth measures: 0.00%;-0.00%;0.00%
+// Balance Monthly Change: +£0.000;-£0.000;£0.000
+// Value measures: £0.000;-£0.000;£0.000, with £bn in the visual title.
+// Set display units to None: the input values are already in £billions.
+
+Exports Card Title =
+VAR ReportingMonth = MAX('Worldwide'[period])
+RETURN
+    FORMAT(ReportingMonth, "MMMM yyyy") & UNICHAR(10) & "Monthly Exports (£bn)"
+
+Imports Card Title =
+VAR ReportingMonth = MAX('Worldwide'[period])
+RETURN
+    FORMAT(ReportingMonth, "MMMM yyyy") & UNICHAR(10) & "Monthly Imports (£bn)"
+
+Trade Balance Title =
+VAR ReportingMonth = MAX('Worldwide'[period])
+RETURN
+    FORMAT(ReportingMonth, "MMMM yyyy") & UNICHAR(10) & "Trade balance (£bn)"
+
+Exports Change Title =
+VAR ReportingMonth = MAX('Worldwide'[period])
+RETURN
+    FORMAT(ReportingMonth, "MMMM yyyy") & " vs "
+        & FORMAT(EDATE(ReportingMonth, -1), "MMMM yyyy")
+        & UNICHAR(10) & "Exports change (%)"
+
+Imports Change Title =
+VAR ReportingMonth = MAX('Worldwide'[period])
+RETURN
+    FORMAT(ReportingMonth, "MMMM yyyy") & " vs "
+        & FORMAT(EDATE(ReportingMonth, -1), "MMMM yyyy")
+        & UNICHAR(10) & "Imports change (%)"
+
+Balance Change Title =
+VAR ReportingMonth = MAX('Worldwide'[period])
+RETURN
+    FORMAT(ReportingMonth, "MMMM yyyy") & " vs "
+        & FORMAT(EDATE(ReportingMonth, -1), "MMMM yyyy")
+        & UNICHAR(10) & "Balance change (£bn)"
